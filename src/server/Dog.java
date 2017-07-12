@@ -1,0 +1,38 @@
+import java.io.*;
+
+public class Dog implements Pet, Serializable {
+	private static final long serialVersionUID = 1L;
+	private String name;
+	private String color;
+	private int age;
+	public Dog (String n, String c, int a) {
+		name = n;
+		color = c;
+		age = a;
+	}
+	public void setName (String n) {
+		name = n;
+	}
+	public void setColor (String c) {
+		color = c;
+	}
+	public void setAge (int a) {
+		age = a;
+	}
+	@Override
+	public String getName () {
+		return name;
+	}
+	@Override
+	public String getColor () {
+		return color;
+	}
+	@Override
+	public int getAge () {
+		return age;
+	}
+	@Override
+	public String toString () {
+		return "Name : " + name + " Color : " + color + " Age : " + age + " wang!";
+	}
+}
