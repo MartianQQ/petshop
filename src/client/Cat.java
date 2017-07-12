@@ -9,6 +9,7 @@ public class Cat implements Pet, Serializable {
 		name = n;
 		color = c;
 		age = a;
+		a = a;
 	}
 	@Override
 	public void setName (String n) {
